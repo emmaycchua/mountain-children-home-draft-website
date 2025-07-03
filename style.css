@@ -3,14 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* Include padding and border in element's total width/height */
+    /* include padding and border in element's total width/height */
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Default font */
-    line-height: 1.6; /* Spacing between lines of text */
-    color: #333; /* Default text color */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
     background-color: #FBF6EF;
 }
 
@@ -38,49 +38,49 @@ header h1 {
 /* Navigation bar */
 nav {
     background: var(--background);
-    padding: 0.7rem 0;  /* Vertical padding */
+    padding: 0.7rem 0;  /* vertical padding */
 }
 
 /* Navigation list */
 nav ul {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Display as flex container */
-    justify-content: center; /* Center items horizontally */
+    list-style: none; /* remove bullet points */
+    display: flex; /* display as flex container */
+    justify-content: center; /* center items horizontally */
 }
 
 /* Navigation list items */
 nav ul li {
-    margin: 0 15px; /* Space between nav items */
+    margin: 0 15px;
 }
 
 /* Navigation links */
 nav ul li a {
-    color: #333; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: #333;
+    text-decoration: none; /* removes underline */
     font-weight: bold;
-    padding: 5px 10px; /* Clickable area */
+    padding: 5px 10px; /* clickable area */
 }
 
 /* Hover states for links */
 nav ul li a:hover,
 .contact-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; /* underline on hover */
 }
 
 /* ===== MAIN CONTENT AREA ===== */
 main {
-    min-height: calc(100vh - 180px); /* Ensure footer stays at bottom */
-    padding: 10px; /* Padding around main content */
+    min-height: calc(100vh - 180px); /* ensures footer stays at bottom */
+    padding: 10px; /* padding around main content */
 }
 
-/* Shared container styles for all pages */
+/* shared container styles for all pages */
 .main-container, 
 .about-section, 
 .gallery-container, 
 .contact-container {
-    max-width: 1200px; /* Maximum content width */
-    margin: 0 auto; /* Center horizontally */
-    padding: 30px 20px; /* Inner spacing */
+    max-width: 1200px; /* maximum content width */
+    margin: 0 auto; /* center horizontally */
+    padding: 30px 20px; /* inner spacing */
 }
 
 /* Headings */
@@ -93,74 +93,74 @@ h2 {
 
 h3 {
     color: #333;
-    margin: 25px 0 15px 0; /* Spacing around heading */
-    font-size: 1.5rem; /* Font size */
+    margin: 25px 0 15px 0;
+    font-size: 1.5rem;
 }
 
 /* ===== ABOUT PAGE STYLES ===== */
 /* Challenges bullet list */
 .challenges-list {
-    margin-left: 40px; /* Indent list */
+    margin-left: 40px; /* indents list items */
     margin-bottom: 20px;
     list-style-type: disc;
 }
 
 /* Team members container */
 .team-members {
-    display: flex; /* Flex layout */
-    justify-content: space-between; /* Space between items */
-    gap: 25px; /* Space between items */
-    margin-top: 30px; /* Space above container */
+    display: flex;
+    justify-content: space-between; /* space between items */
+    gap: 25px;
+    margin-top: 30px; /* space above container */
 }
 
 /* Individual team member card */
 .member {
     flex-basis: calc(33.333% - 25px); /* 3 items per row with gap */
-    background-color: var(--background); /* Card background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Card shadow */
-    border-top: 4px solid var(--secondary); /* Top accent border */
+    background-color: var(--background); /* card background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* card shadow */
+    border-top: 4px solid var(--secondary); /* top accent border */
 }
 
 /* Member photo container */
 .member-photo {
-    width: 100%; /* Full width */
-    height: 250px; /* Fixed height */
-    overflow: hidden; /* Hide overflow */
+    width: 100%; /* full width */
+    height: 250px; /* fixed height */
+    overflow: hidden; /* hide overflow */
 }
 
 /* Member photo image */
 .member-photo img {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Crop to fill container */
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    object-fit: cover; /* crop to fill container */
 }
 
 /* Member info section */
 .member-info {
-    padding: 20px; /* Inner spacing */
-    text-align: center; /* Center content */
+    padding: 20px; /* inner spacing */
+    text-align: center; /* center content */
 }
 
 /* Member name */
 .member-info h4 {
-    color: #35424a; /* Dark gray color */
-    margin-bottom: 5px; /* Space below name */
-    font-size: 1.2rem; /* Font size */
+    color: #35424a;
+    margin-bottom: 5px; /* space below name */
+    font-size: 1.2rem;
 }
 
 /* Member role */
 .member-info .role {
-    color: #666; /* Gray color */
-    font-weight: bold; /* Bold text */
-    margin-bottom: 10px; /* Space below role */
-    display: block; /* Display as block */
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px; /* space below role */
+    display: block; /* display as block */
 }
 
 /* Member description */
 .member-info .description {
-    font-size: 0.9rem; /* Smaller font */
-    line-height: 1.5; /* Spacing between lines */
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* ===== GALLERY PAGE STYLES ===== */
@@ -168,87 +168,85 @@ h3 {
 .gallery-grid {
     display: grid; /* CSS Grid layout */
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 25px; /* Space between items */
+    gap: 25px;
 }
 
 /* Gallery item */
 .gallery-item {
-    overflow: hidden; /* Hide overflow */
-    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
     background-color: var(--background); /* Background color */
 }
 
 /* Gallery images */
 .gallery-item img {
-    width: 100%; /* Full width */
-    height: 250px; /* Fixed height */
-    object-fit: cover; /* Crop to fill */
-    display: block; /* Remove inline spacing */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block; /* removes inline spacing */
 }
 
 /* ===== CONTACT PAGE STYLES ===== */
 /* Contact methods container */
 .contact-methods {
-    display: flex; /* Flex layout */
-    justify-content: center; /* Center items */
-    gap: 30px; /* Space between items */
-    margin: 40px 0; /* Vertical spacing */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
 }
 
 /* Contact card */
 .contact-card {
-    background-color: var(--background); /* Card background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 25px; /* Inner spacing */
-    width: 220px; /* Fixed width */
-    text-align: center; /* Center content */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    border-top: 4px solid var(--secondary); /* Top accent border */
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 25px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--secondary);
 }
 
 /* Contact icon */
 .contact-icon {
-    font-size: 2.5rem; /* Large icon size */
-    margin-bottom: 10px; /* Space below icon */
-    color: #35424a; /* Icon color */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #35424a;
 }
 
 /* Contact title */
 .contact-title {
-    font-size: 1.2rem; /* Font size */
-    margin-bottom: 15px; /* Space below title */
-    color: #35424a; /* Text color */
-    font-weight: bold; /* Bold text */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #35424a;
+    font-weight: bold;
 }
 
 /* Contact link */
 .contact-link {
-    color: #333; /* Link color */
-    text-decoration: none; /* Remove underline */
-    word-break: break-all; /* Break long words */
+    color: #333;
+    text-decoration: none;
+
 }
 
-/* ===== HERO IMAGE STYLES ===== */
-/* Hero image container */
-.hero-image {
-    text-align: center; /* Center image */
-    margin-bottom: 20px; /* Space below image */
+/* ===== LARGE IMAGE STYLES ===== */
+/* image container */
+.large-image {
+    text-align: center; /* center image */
+    margin-bottom: 20px; /* space below image */
 }
 
-/* Hero image */
-.hero-image img.responsive-image {
-    width: 100%; /* Full width */
-    max-width: 1000px; /* Maximum width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
+/* image */
+.large-image img.responsive-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto; /* maintains aspect ratio */
+    border-radius: 10px; /* rounded corners */
 }
 
 /* ===== FOOTER ===== */
 footer {
-    background: var(--primary); /* Same as header */
-    color: #333; /* Text color */
-    text-align: center; /* Center content */
-    padding: 20px 0; /* Vertical padding */
-    margin-top: 30px; /* Space above footer */
+    background: var(--primary);
+    color: #333;
+    text-align: center; /* center content */
+    padding: 20px 0;
+    margin-top: 30px; /* space above footer */
 }
